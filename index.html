@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Meu site</title>
+    <style>
+        mark{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Olá mundo
+        </h1>
+        <hr>
+        <p>
+            Este é o meu primeiro documento HTML! Estou muito felicidade
+        </p>
+        <h1>
+            Parágrados e quebras de linha
+        </h1>
+        <hr>
+        <p>
+            Você pode escrever um parágrado de qualquer jeito. Basta colocar tudo no meio de um par de tags &lt;p&gt; e &lt;/p&gt;  <!-- LESS THAM / GREATER THAN-->
+        </p>
+        <p>
+            Se precisar quebrar o texto em algum lugar específico
+            <br> como esse, pode pode usar a tag &lt;br&gt;.
+        </p>
+    </div>
+    <p>
+        Vamos adicionar alguns símbolos especiais:
+
+        &reg; 
+        &copy;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &delta;
+        &Delta;
+        &uarr;
+        &nbsp;
+        &reg;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &empty;
+        &sum;
+        &larr;
+        &uarr;
+        &darr;
+        &rarr;
+    </p>
+    <p>
+        Vamos adicionar alguns emoji
+
+        &#x1F596; 
+        &#x1F9DF;
+    </p>
+
+    <!--Teste de imagens-->
+
+<h1>
+    Testando carga e Imagens
+</h1>
+<p>
+    Abaixo você verá uma imagem que está na mesma pasta.
+</p>
+<img src="html-150.avif" alt="Logo html"> 
+<p>
+    Também podemos carregar pastas dentro de outras pastas
+</p>
+<img src="imagens/paisagem1-500.jpg" alt="Paisagem Bonita">
+<p>
+    Também podemos colocar por links externos
+</p>
+<img src="https://static.wikia.nocookie.net/fortnite_gamepedia/images/8/81/T-AthenaBundles-Featured-Historian_1.png/revision/latest/scale-to-width-down/256?cb=20201204160425" alt="Kratos">
+
+<!--Hierárquia dos Textos-->
+
+<h1>
+    Entendendo Portugal
+</h1>
+<h2>
+    1. Introdução
+</h2>
+<h3>
+    1.1 Justificativa da temática
+</h3>
+<h3>
+    1.2 Caráter excepcional do caso de estudo</h3>
+
+<h3>
+    1.3 Perguntas de partida e objetivos de investigação</h3>
+
+<h3>
+    1.4 Metodologia de investigação</h3>
+
+<h4>
+    <i>
+    1.4.1 Etapas de investigação
+</i>
+</h4>
+
+<h2>
+    2. O ordenamento do território em Portugal,: Instrumentos e Atores
+</h2>
+<h3>
+    2.1 Os instrumentos de gestão do território
+</h3>
+<h4>
+    <i>
+    2.1.1 Os instrumentos de planeamento territorial
+</i>
+</h4>
+<h4>
+    <i>
+    2.1.2 Os regimes territoriais especiais</i>
+</h4>
+
+<!--Adress-->
+
+<p>
+    Eu moro na
+    <address>
+        Rua dos capixabas
+    </address>
+</p>
+
+<!--Principais formatações -->
+
+<h1>
+    Principais formatações
+</h1>
+<h2>
+    Negrito / Destaque
+</h2>
+
+<p>
+    Nessa frase temos um 
+    <b>
+        Termo em negrito
+    </b> 
+    usando a tag &lt;B&gt; não semantica.
+</p>
+<p>
+    Nessa frase temos um 
+    <strong>
+        termo em destaque
+    </strong> 
+    usando a tag &lt;STRONG&gt; não semantica.
+</p>
+<h2>
+    Itálico / Ênfase
+</h2>
+<p>
+    Nesta frase temos um 
+    <i>
+        termo em itálico
+    </i>
+     usando a tag &lt;I&gt; 
+     (não semântica)
+</p>
+<p>
+    Nesta frase temos um 
+    <em>
+        termo em ênfase
+    </em> 
+    usando a tag &lt;EM&gt; (semântica).
+</p>
+<h2>
+    Texto Marcado
+</h2>
+<p>
+    Podemos criar também um 
+    <mark style="background-color: cyan;">texto marcado</mark> usando a tag 
+    &lt;MARK&gt;.
+</p>
+<p>
+    E no outro paragrafo temos <mark>outro texto marcado</mark> no final
+</p>
+<h2>
+    Texto grande e pequeno</h2>
+<p>
+    Estamos criando um 
+    <big>
+    texto grande
+    </big>
+    <!--big está obsoleto, evite usar-->
+     e um 
+<small>
+    texto pequeno
+</small>
+     nesse parágrafo</p>
+
+<h2>
+    Texto inserido</h2>
+
+<p>
+    Podemos marcar <ins>
+    um texto como inserido</ins>
+     para dar um ênfase e indicar que ele foi adicionar depois.</p>
+
+<p>
+    Existe também o <u>
+    sublinhado</u>
+     com a tag U (não semântica)</p>
+
+<h2>
+    Texto deletado</h2>
+<p>
+    Marcar <del>
+    um texto como excluído</del>
+     para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+<h2>
+    Texto sobrescrito</h2>
+
+<p>
+    Para inserir coisas do tipo x<sup>
+    20</sup>
+    +3</p>
+<h2>
+    Texto subscrito</h2>
+<p>
+    Para inserir coisas do tipo H<sub>
+    2</sub>
+    O</p>
+ <hr>
+<h1>
+    Outras formatações</h1>
+<h2>
+    Codigo fonte / Pré formatação</h2>
+<p>
+    O comando &lt;code&gt; = <code>
+    document.getElementById('teste')</code>
+     é escrito em linguagem JavaScript</p>
+<pre>
+    <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'0 número {num}é ÍMPAR)
+else:
+    print(f'0 número {num} é IMPAR)
+print('Fim do programa')
+    </code>
+</pre>
+<h2>
+    Citações simples
+</h2>
+<p>
+    Como diria o pai de um amigo 
+    <q>
+        o computador é um burro muito rápdio
+    </q>
+</p>
+<h2>
+    Citações completas
+</h2>
+<p>
+    Segundo Julia, em seu twitter em um post ela disse:
+</p>
+<blockquote cite="https://twitter.com/gdyjuia/status/1697791696610722142">
+    Personalizaram errado minha camisa no Corinthians 😭
+</blockquote>
+<h2>
+    Abreviações
+</h2>
+<p>
+    Estou estudando 
+    <abbr title="Hyper Text Markup Language">
+        HTML
+    </abbr> 
+    e 
+    <abbr title="Cascading Style Sheets">
+        CSS
+    </abbr>.
+</p>
+<h2>
+    Texto Invertido
+</h2>
+<p>
+    <bdo dir="rtl">
+        Da uma sugada aqui na minha rola.
+    </bdo>
+</p> 
+<hr>
+<h1>
+    Listas
+</h1>
+<h2>
+    Listas Ordenadas
+</h2>
+<ol type="I"> <!-- 1 a A i I-->
+    <li>Acordar
+    <li>Comer
+    <li>Escovar os dentes
+    <li>Ir trabalhar
+</ol>
+<h2>
+    Listas não ordenadas
+</h2>
+<ul type="square"> <!--cicle, disc e square-->
+    <li>
+        Acordar
+    </li>
+    <li>
+        Comer
+    </li>
+    <li>
+        Escovar os dentes
+    </li>
+    <li>
+        Ir trabalhar
+    </li>
+</ul>
+<h2>
+    Minhas linguagens favoritas
+</h2>
+<ol>
+    <li>
+        Antigas
+    </li>
+    <ol type="I">
+        <li>
+            Clipper
+        </li>
+        <li>
+            Visual Basic
+        </li>
+        <li>
+            Fortran
+        </li>
+        <li>
+            Delphi
+        </li>
+    </ol>
+    <li>
+        Novas
+    </li>
+    <ol type="I" start="">
+        <li>
+            PHP
+        </li>
+        <li>
+            Python
+        </li>
+        <li>
+            JavaScript
+        </li>
+        <li>
+            Cotlin
+        </li>
+    </ol>
+</ol>
+<h2>
+    Meus jogos favoritos
+</h2>
+<ul type="square">
+    <li>
+        PlayStation II
+    </li>
+    <br>
+    <ul type="square">
+        <li>
+            TMNT
+        </li>
+        <li>
+            GTA: SA
+        </li>
+        <li>
+            Bully
+        </li>
+        <li>
+            PES
+        </li>
+    </ul> <br>
+    <li>Computador</li> <br>
+    <ul type="square">
+        <li>Rocket League</li>
+        <li>Valorant</li>
+        <li>Minecraft</li>
+        <li>Terraria</li>
+    </ul>
+</ul>
+<h2>
+    Lista de definições
+</h2>
+<dl>
+    <dt>
+        HTML
+    </dt>
+    <dd>
+        Linguagem de marcação para a criação do conteúdo de um site.
+    </dd>
+    <dt>
+        CSS
+    </dt>
+    <dd>
+        Linguagem de marcação para a criação de o design de um site.
+    </dd>
+    <dt>
+        JavaScript
+    </dt>
+    <dd>
+        Linguagens de programação para a criação da interatividade de um site
+    </dd>
+</dl>
+<h1>
+    Usando links
+</h1>
+<h2>
+    Externo
+</h2>
+<p>
+    Você pode acessar a 
+    <a href="https://www.ceale.fae.ufmg.br/glossarioceale/verbetes/hipertexto" target="_blank" rel="externos">
+    definição de hipertexto
+    </a>
+</p>
+<h2>
+    Interno
+</h2>
+<p>
+    Esta é a minha primeira página do site. Se você quiser, pode acessar também a minha 
+    <a href="pag002.html" target="_blank" rel="next">
+        segunda página
+    </a>
+</p>
+<p>
+    Voce pode também ir na nossa Terceira página. 
+    <a href="Noticias/pag003.html" target="_blank" rel="nofollow">
+    &gt;Clicando aqui.&lt;
+    </a>
+</p>
+<h2>
+    Links para download
+</h2>
+<p>
+    Logo da Página 
+    <a href="imagens/qqq.jpg" download="eu avisei.pdf" type="image.jpg">
+    &#x1F525;
+    </a>
+</p>
+<ul>
+    <li>Arquivo em PDF de como funciona a Internet</li>
+    <ul>
+        <li><a href="02 - Como funciona a Internet.pdf" download="1NT3N3T1" type="application.pdf">Como funciona a Internet.</a></li>
+    </ul>
+    <li>Arquivo em ZIP para download do STOCKFISH</li>
+    <ul>
+        <li>
+            <a href="stockfish-windows-x86-64-avx2.zip" download="STOCKFISH" type="application.zip">Download STOCKFISH</a>
+        </li>
+    </ul>
+</ul>
+<h1>
+    Imagens dinâmicas
+</h1>
+<p>
+    Tente abrir este site em dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador
+</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+    <img src="imagens/img-g.png" alt="Imagem flexível">
+</picture>
+<h1>
+    Reproduzindo Áudio
+</h1>
+<!--<p>
+    Aqui vai um áudio reproduzido em HTML5.
+</p>
+<audio src="imagens/undeacad.mp3" controls autoplay></audio>-->
+<!--MP3,WAV e OGG-->
+<p>
+    Um áudio com vários sources
+</p>
+<audio preload="auto" autoplay controls loop>
+    <source src="imagens/undeacad.mp3" type="audio/mpeg">
+</audio>
+<div>
+    <h1>
+        Inserindo videos hospedados localmente
+    </h1>
+    <video controls width="560" poster="imagens/sm.jpg">
+        <source src="videos/baleia.mp4" type="video/mp4">
+        <source src="videos/baleia.webm" type="video/webm">
+        <p>
+            Não foi possivel carregar o vídeo. :/
+        </p>
+    </video>
+</div>
+<div>
+    <h1>
+        Inserindo videos externos do YouTube
+    </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=qCfTUIRJ740xPZpB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    <iframe src="https://player.vimeo.com/video/126287950?h=c655f0ff29" width="640" height="346" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    </iframe>
+    <p>
+        <a href="https://vimeo.com/126287950">Klaus teaser &copy;2015 Sergio Pablos Animation Studios, S.L. &amp; ANTENA 3 FILMS, S.L.U. All rights reserved</a> from 
+        <a href="https://vimeo.com/thespastudios">The SPA Studios</a> on 
+        <a href="https://vimeo.com">Vimeo</a>.
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        h1{ 
+
+            /* PODEMOS COLOCAR UM BLOCK EM INLINE LEVEL */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*border: 10px;
+            border-style: solid;
+            border-color: black;*/
+            border: 10px solid black;
+
+            margin: 10px auto 20px;
+
+            padding: 10px;
+            /* ordem de padding = top, right, bottom, left */
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+            outline: 5px dashed salmon;
+        }
+
+        a{
+
+            /* PODEMOS COLOCAR UM INLINE EM UM BLOCK LEVEL */
+            display: block;
+            border: 2px dashed red;
+            padding: 1px;
+            text-align: center;
+            
+            /* teste os border-styles */
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de caixa box-level
+    </h1>
+    <p>
+        Os parágrafos são exemplos de box-level, mas os <a href="#">links</a> também são exemplos de inline-levels.
+    </p>
+</body>
+</html>
