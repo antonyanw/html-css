@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: solid black 1px;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: aquamarine;
+        }
+
+        .cgrupo {
+            background-color: #09e29a;
+        }
+
+        .cprof {
+            background-color: #3fe075;
+        }
+
+        .cgen {
+            background-color: #0fd350;
+        }
+
+        .cesc {
+            background-color: #0fd319;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exercício de Tabelas
+    </h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgrupo" span="2">
+                <col class="cprof">
+                <col class="cgen">
+                <col class="cesc">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">Gênero</th>
+                <th scope="col">Estado Civil</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>Feminino</td>
+                <td>25</td>
+                <td>Jornalista</td>
+                <td>Cisgênero</td>
+                <td>Solteira</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>Masculino</td>
+                <td>29</td>
+                <td>Policial</td>
+                <td>Cisgênero</td>
+                <td>Casado</td>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td>Masculino</td>
+                <td>47</td>
+                <td>Professor</td>
+                <td>Cisgênero</td>
+                <td>Viúvo</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>Feminino</td>
+                <td>18</td>
+                <td>Vendedora</td>
+                <td>Homosexual</td>
+                <td>Solteira</td>
+            </tr>
+            <tr>
+                <td>Pamela</td>
+                <td>Feminino</td>
+                <td>20</td>
+                <td>Massagista</td>
+                <td>Bi-sexual</td>
+                <td>Solteira</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>Masculino</td>
+                <td>35</td>
+                <td>Advogado</td>
+                <td>Cisgênero</td>
+                <td>Divorciado</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
