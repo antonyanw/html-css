@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media (max-width: 600px) {
+    header {
+        font-size: 0.1rem;
+    }
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+}
+
+
+
+header nav {
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.prim {
+    padding: 10px;
+}
+
+#sac {
+    padding-left: 10em;
+}
+
+#email, #entre {
+    padding: 20px;
+}
+
+#vip {
+    padding: 30px;
+}
