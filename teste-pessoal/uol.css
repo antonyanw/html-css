@@ -4,17 +4,25 @@
     header {
         font-size: 0.1rem;
     }
-  }
+}
+
+@font-face {
+    font-family: uol;
+    src: url(fontes/UOLtext\ Regular\ Regular.woff2.ttf) format(truetype);
+}
 
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'uol', Arial, Helvetica, sans-serif;
 }
+
 
 header {
     display: flex;
     justify-content: space-between;
     background-color: black;
+    font-size: .75em;
 
 }
 
@@ -34,14 +42,16 @@ nav > a {
     padding: 10px;
 }
 
-#sac {
-    padding-left: 10em;
-}
 
 #email, #entre {
     padding: 20px;
 }
 
 #vip {
-    padding: 30px;
+    padding: 5px 15px;
+    background-color: #FFCE00;
+    margin: 30px; 
+    color: black;
+    border-radius: 5px;
+    font-size: 1em;
 }
