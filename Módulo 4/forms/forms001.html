@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input#inome {
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Criando um Formulário
+    </h1>
+    <form action="cadastro.php" autocomplete="off" method="get"> <!--TODOS OS DADOS DO GOOGLE NÃO SAO SUGERIDOS
+    "get" FAZ COM QUE SEUS DADOS FIQUEM SALVOS NA URL DO SITE, "post" FAZ COM QUE SEUS DADOS NÃO FIQUEM SALVOS NA URL, MAS ELES FICAM DENTRO DO DEVTOOLS, ENTÃO AINDA ASSIM ISSO NÃO GARANTE SEGURANÇA.
+
+    QUANDO USAR =
+    
+    get =   USAR QUANDO NÃO HOUVEREM INFORMAÇÕES SENSÍVEIS COMO UMA BUSCA NO GOOGLE POR EXEMPLO.
+            SÓ É POSSÍVEL ENVIAR DADOS DE ATÉ 3000 BYTES aprox.= 3000 letras.
+            NÃO PODE USAR PARA ENVIAR IMAGENS
+
+    post =  DADOS SENSÍVEIS,
+            ( EM CASO DE CARTÕES DE CRÉDITO E SENHA O IDEAL É TRABALHAR COM "https" )
+            CASO QUERIA QUE AS INFORMAÇÕES NÃO APAREÇAM NA URL.
+            SE OS DADOS TIVEREM MAIS DE 3000 BYTES.
+            CASO QUERIA ENVIAR ARQUIVOS.
+    -->
+        <p>
+            <label for="inome">
+                Name:
+            </label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">
+                Sobrenome:
+            </label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

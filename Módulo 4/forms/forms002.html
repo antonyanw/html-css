@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>
+        Teste de formulário
+    </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="user">
+                Usuário
+            </label>
+            <input type="text" name="Usuário" id="user" required minlength="3" maxlength="10" autocomplete="username" size="10" placeholder="nome do usuário">
+            <!--minleght = QUANTIDADE MÍNIMA DE CARACTERES
+                maxleght = QUANTIDADE MÁXIMA DE CARACTERES
+                placeholder = DICA DENTRO DO INPUT 
+                autocomplete = pode se usar "username" ou "current-username"-->
+                
+        </p>
+        <p>
+            <label for="pass">Senha</label>
+            <input type="password" name="Senha" id="pass" required minlength="3" maxlength="10" size="11" placeholder="Ex:123" autocomplete="current-password">
+            <!--autocomplete = PODE SE USAR "new-password" PARA CADASTROS e "current-password" PARA LOGINS. -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
