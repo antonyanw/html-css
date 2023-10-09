@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email e Celular</title>
+</head>
+<body>
+    <h1>
+        Exemplo de formulario
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!-- fieldset = GRUPO DE CAMPOS -->
+            <legend>
+                Dados Pessoais
+            </legend>
+            <!-- legend = LEGENDA DO FIELDSET -->
+            <p>
+                <label for="iemail">
+                    Email:
+                </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="someone@example.com">
+            </p>
+            <p>
+                <label for="itel">
+                    Telefone:
+                </label>
+                <input type="tel" name="telefone" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(XX)XXXXX-XXXX">
+                <!-- ESTUDAR MAIS SOBRE RegEx.
+                pattern = ANTES DE COMEÇAR DEVE SE COLOCAR "^$" E ESCREVER O CÓDIGO ENTRE ESSES 2 SÍMBOLOS.PARA INSERIR UM "DDD" VOCE DEVE COLOCAR "\(\d{2})", ESSE "{2}" INDICA A QUANTIDADE DE DÍGITOS DENTRO DO PARENTESES. DAI VOCE PODE COLOCAR OU "\d" OU "{0-9}" PARA INDICAR QUE SERÁ COLOCADO UM DÍGITO, EM SEGUIDA ABRA CHAVES"{}" E COLOQUE A QUANTIDADE DE DÍGITOS QUE VOCÊ QUER QUE APAREÇA NAQUELA PARTE. Ex: {4},TAMBÉM PODE COLOCAR UM NUMERO A MAIS COM UMA VIRGULA EM CASOS QUE PRECISE Ex {4,5}. CASO QUERIA, PODE COLOCAR UM SIMBOLO APOS ISSO E FAZER O PROCESSO MAIS DE UMA VEZ, FICARIA TIPO:
+                SÍMBOLO = HÍFEN
+            
+                pattern="^\(\d{2})\d{4,5}-\d{4}$"
+                OU sem DDD
+                pattern="^{0-9}{4,5}-{0-9}{4}$"
+                NOS CASOS RESULTARIAM EM:
+                (XX)XXXXX-XXXX e XXXXX-XXXX
+                X = número
+            
+                SEI QUE É DIFÍCIL MAS VOCE CONSEGUE KKKKK
+                -->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
