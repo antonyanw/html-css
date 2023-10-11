@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de Formulário
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest" required>
+                <option value="" disabled>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                        <option value="RO">Rondônia</option>
+                        <option value="AC">Acre</option>
+                        <option value="TO">Tocantins</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">
+                Profissão:
+            </label>
+            <input type="text" name="Profissão" id="iprof" list="lsprof" required>
+            <datalist id="lsprof">
+                <option value="ADM">Administrador</option>
+                <option value="MOT">Motorista</option>
+                <option value="PROF">Professor</option>
+                <option value="ENF">Enfermeira</option>
+                <!-- PODE DEIXAR SEM OS "value" TAMBEM, PARA ASSIM MOSTRAR SOMENTE AS PROFISSÕES SEM AS SIGLAS DELAS. -->
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">
+                Mensagem
+            </label>
+            <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escrava sobre sua vida" maxlength="10" style="resize: none;" required></textarea>
+            <!-- CASO FOR UTILIZAR O "textarea" USAR O METHOD "post" NO FORM 
+            style = resize: none é PARA NAO PODER ALTERAR O TAMANHO DA CAIXA DE MENSAGEM-->
+            <!-- PARA O PLACEHOLDER FUNCIONAR VOCE O "textarea" E O "/textarea" NAO DEVEM POSSUIR ESPAÇO ENTRE ELES PORQUE ISSO SE CARACTERIZA UMA LETRA-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
