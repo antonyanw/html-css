@@ -2,3 +2,76 @@
 
 /* TODAS AS DEMAIS MÍDIAS */
 
+/* TYPICAL DEVICE BREAKPOINTS Recomendação do W3C
+PEQUENAS TELAS= até 600px
+CELULAR= de 600px até 768px
+TABLET= de 768px até 992px
+DESKTOP= de 992px até 1200px
+GRANDES TELAS= acima de 1200px
+ */
+
+@media print { /*IMPRESSÃO*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url(../img/back-print.jpg); /*DESNECESSÁRIO (nao sai background em impressão)*/
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Produzido por Antony Eduardo';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none;}
+    img#pc {display: none;}
+    img#print {display: block;}
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*TABLET*/
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+    img#phone { display: none; }
+    img#tablet { display: none;}
+    img#pc {display: block;}
+    img#print {display: none;}
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /*TELAS GRANDES*/
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tv { display: block; }
+}
