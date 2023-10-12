@@ -2,3 +2,7 @@
 
 /* CONFIGURAÇÕES DE PAISAGEM */
 
+body {
+    background-image: url(../image/cev-landscape.jpg);
+    background-position: left bottom;
+}
