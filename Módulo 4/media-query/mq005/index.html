@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>
             Meu site
         </h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li>
                     <a href="#">Opção 1</a>
@@ -33,9 +36,9 @@
     </header>
     <main>
         <article>
-            <h1>
+            <h2>
                 Testando Media Queries
-            </h1>
+            </h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi maxime enim fugiat! Eveniet iure ipsa rem ut, esse accusantium saepe, cumque consequuntur vel eligendi quia, quod sunt itaque dolorum.
                 Maxime dolorum accusamus nulla blanditiis. Quasi sunt non quidem quae fugiat quo aliquid repellendus? Vero ratione voluptatibus veniam sapiente facilis optio tenetur, quasi, esse autem labore voluptatem ipsam, adipisci eos.
@@ -50,5 +53,23 @@
             </p>
         </article>
     </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
