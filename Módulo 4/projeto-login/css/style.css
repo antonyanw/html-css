@@ -34,19 +34,18 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 20px;
     overflow: hidden;
     /* TUDO O QUE FICAR FORA DA BORDA "overflow" FICARA ESCONDIDO */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
-    transition: width .3s, height .3s;
     /* ISSO AQUI EM CIMA É OURO MEU PARCEIRO USE-A SEMPRE */
-    transition-timing-function: ease;
     /* PARA SUAVIZAR AS ANIMAÇÕES */
-
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#img {
@@ -68,4 +67,85 @@ div#form > h1 {
 
 div#form > p {
     font-size: .8em;
+    display: block;
+    margin: 20px auto;
 }
+
+div.campo {
+    background-color: var(--cor02);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid #5f2c82;
+}
+
+form label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #acd8d7;
+    font-size: 1.1em;
+    width: calc(100% - 44.36px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+
+}
+
+div.campo > input:focus-within {
+    /* "focus-whithin" É PARA ESTILIZAR A CAIXA DE TEXTO DENTRO DO INPUT ( NÃO SEI SE VALE PARA QUALQUER CAIXA DE TEXTO ) */
+    background-color: rgb(243, 241, 239);
+}
+
+form > input[type=submit] {
+    /* VOCÊ PODE COLOCAR PARÂMETROS DE UM INPUT POR EXEMPLO POR MEIO DE COLCHETES "[]" */
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    background-color: var(--cor01);
+    border: none;
+    border-radius: 5px;
+    color: rgba(255, 254, 254, 0.671);
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #316d6b;
+    transition-duration: .2s;
+}
+
+.but {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #7ff7f3;
+    border: 1px solid #49a09d;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.but:hover {
+    background-color: #b9f5f3;
+}
+
+span#mail {
+    font-size: .8em;
+}
+

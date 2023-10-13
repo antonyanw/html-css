@@ -17,6 +17,7 @@
 
     section#login {
         width: 80vw;
+        height: 325px;
     }   
     
     section#login >div#img {
@@ -50,20 +51,23 @@
     
     section#login {
         width: 900px;
+        height: 360px;
     }
 
     section#login > div#img {
-        display: none;
-    }
-
-    section#login > div#img2 {
         float: right;
         height: 100%;
         width: 50%;
-        background: url(../img/predio1.jpg);
+        background-image: url(../img/predio1.jpg);
         background-size: cover;
     }
-    
+
+    section#login > div#form {
+        float: left;
+        height: 100%;
+        width: 50%;
+    }
+
     div#form > h1 {
         font-size: 1.9em;
     }
