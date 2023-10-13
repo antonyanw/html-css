@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #49a09d;
+    --cor02: #5f2c82;
+}
+
+@media print {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: linear-gradient(var(--cor01), var(--cor02));
+    }
+
+    section#login {
+        width: 80vw;
+    }   
+    
+    section#login >div#img {
+        display: none;
+    }
+
+    section#login > div#img2 {   
+        float: left;
+        width: 30%;
+        height: 100%;
+        background: url(../img/predio1.jpg) no-repeat;
+        background-position: left center;
+    }
+
+    section#login > div#form {
+        float: right;
+        height: 100%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 50vw;
+    }
+}
+
